@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columnLeft{
+    float: left;
+    width: 50%;
+    height: 47px;
+    background-color: yellow;
+}
+
+.columnRight{
+    float: right;
+    width: 50%;
+    background-color: yellowgreen;
+    height: 47px;
+}
