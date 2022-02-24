@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;;
+}
+
 .clearfix::after{
     content: "";
     display: table;
@@ -17,20 +21,55 @@
     margin: 0 auto;
 }
 
+a{
+    text-decoration: none;
+}
+
+/* Color */
+:root{
+    --blue: #0061FF;
+}
+
 /* Header */
 
 .columnLeft{
     float: left;
     width: 50%;
     height: 47px;
-    background-color: yellow;
+    padding: 10px;
 }
 
 .columnRight{
     float: right;
     width: 50%;
-    background-color: yellowgreen;
     height: 47px;
+    padding: 10px;
+    text-align: right;
+}
+
+.columnLeft a{
+    font-weight: 500;
+    color: black;
+    margin-left: 4rem;
+    vertical-align: middle;
+}
+
+.columnLeft img{
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
+.columnRight a{
+    font-weight: 500;
+    color: black;
+    margin-left: 4rem;
+}
+
+#button_inizia{
+    background-color: var(--blue);
+    color: white;
+    margin-right: 1rem;
+    padding: 6px 20px;
 }
 
 /* Main */
