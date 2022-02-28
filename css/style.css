@@ -18,9 +18,10 @@ body{
 }
 
 .centered_container{
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     min-width: 970px;
+    max-width: 970px;
 }
 
 a{
@@ -52,6 +53,8 @@ p{
 :root{
     --blue: #0061FF;
     --lightblue: #B4D0E7;
+    --lightgrey: #F5F5F5;
+    --grey: #7D8A96;
 }
 
 /* Header */
@@ -111,12 +114,14 @@ p{
     display: block;
     margin: 0;
     padding: 0;
+    padding: 5px;
 }
 
 #hidden2 li{
     display: block;
     margin: 0;
     padding: 0;
+    padding: 5px;
 }
 
 
@@ -127,11 +132,11 @@ li a{
 
 .columnLeft ul li:hover #hidden{
     display: block;
-    background-color: lightgray;
+    background-color: var(--lightgrey);
 }
 
 .columnLeft ul li:hover{
-    background-color: lightgray;
+    background-color: var(--lightgrey);
 }
 
 #hidden li:hover{
@@ -141,17 +146,16 @@ li a{
 
 .columnRight ul li:hover #hidden2{
     display: block;
-    background-color: lightgray;
+    background-color: var(--lightgrey);
 }
 
 .columnRight ul li:hover{
-    background-color: lightgray;
+    background-color: var(--lightgrey);
 }
 
 #hidden2 li:hover{
     background-color: white;
 }
-
 
 .nav_left,
 .nav_center,
@@ -182,9 +186,6 @@ li a{
 }
 
 
-
-
-
 /* Main */
 
 #hero_image{
@@ -193,13 +194,15 @@ li a{
     height: 670px;
     margin-bottom: 180px; 
     padding-top: 100px;
+
 }
 
 .local_contain_center{
     width: 78%;
     /* border: 1px solid black; */
     margin: 0 auto; 
-    
+    max-width: 1440px;
+ 
 }
 
 h1{
@@ -262,7 +265,6 @@ h1{
 }
 
 
-
 input{
     height: 20px;
     width: 20px;
@@ -275,7 +277,7 @@ input{
 }
 
 .border{
-    border: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
     font-weight: 500;
     text-align: center;
     padding: 10px;
@@ -292,10 +294,9 @@ input{
     font-size: 20px;
 }
 
-.color_gray{
-    color: gray;
+.color_grey{
+    color: var(--grey);
 }
-
 
 .one{
     margin-top: 20px;
@@ -342,7 +343,7 @@ input{
 .standard,
 .advanced{
     height: 1000px;
-    width: 29.333%;
+    width: 31.333%;
     float: left;
     border: 1px solid lightgray;
     margin-bottom: 30px;
@@ -350,8 +351,8 @@ input{
 }
 
 .standard{
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .enterprise{
@@ -394,7 +395,6 @@ input{
 } 
 
 
-
 /* Section partner */
 
 
@@ -424,7 +424,6 @@ input{
 .image_left img{
     width: 100%;
 }
-
 
 
 /* Section dropbox business */
@@ -496,7 +495,6 @@ input{
     filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
     
 }
-
 
 .fourSquare2{
     background-color: #61082B;
@@ -632,7 +630,6 @@ input{
     border: 1px solid black;
     float: left;
 }
-
 
 
 /* section trial */
