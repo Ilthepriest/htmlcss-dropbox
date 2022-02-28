@@ -48,6 +48,25 @@ p{
     font-size: 15px;
 }
 
+.col_20{
+    float: left;
+    width: 20%;
+}
+
+.col_25{
+    float: left;
+    width: 25%;
+}
+
+.col_33{
+    float: left;
+    width: 33.333%;
+}
+
+.col_50{
+    float: left;
+    width: 50%;
+}
 
 /* Color */
 :root{
@@ -59,9 +78,8 @@ p{
 
 /* Header */
 
-.columnLeft{
-    float: left;
-    width: 50%;
+.columnLeft,
+.columnRight{
     height: 65px;
     padding: 10px;
     line-height: 45px;
@@ -69,38 +87,10 @@ p{
 }
 
 .columnRight{
-    float: right;
-    width: 50%;
-    height: 65px;
-    padding: 10px;
     text-align: right;
-    line-height: 45px;
 }
 
-.columnLeft ul li{
-    font-weight: 500;
-    margin-left: 4rem;
-    vertical-align: middle;
-    display: inline-block;
-    list-style: none;
-   
-}
-
-.columnLeft #hidden{
-    position: absolute;
-    width: 800px;
-    display:none;
-    
-}
-
-.columnRight #hidden2{
-    position: absolute;
-    display:none;
-    width: 300px;
-    text-align: start;
-    
-}
-
+.columnLeft ul li,
 .columnRight ul li{
     font-weight: 500;
     margin-left: 4rem;
@@ -109,14 +99,19 @@ p{
     list-style: none;
 }
 
-
-#hidden li{
-    display: block;
-    margin: 0;
-    padding: 0;
-    padding: 5px;
+.columnLeft #hidden,
+.columnRight #hidden2{
+    position: absolute;
+    width: 800px;
+    display:none;
 }
 
+.columnRight #hidden2{
+    width: 200px;
+    text-align: start; 
+}
+
+#hidden li,
 #hidden2 li{
     display: block;
     margin: 0;
@@ -130,40 +125,21 @@ li a{
     color: black;
 }
 
-.columnLeft ul li:hover #hidden{
-    display: block;
-    background-color: var(--lightgrey);
-}
-
-.columnLeft ul li:hover{
-    background-color: var(--lightgrey);
-}
-
-#hidden li:hover{
-    background-color: white;
-}
-
-
+.columnLeft ul li:hover #hidden,
 .columnRight ul li:hover #hidden2{
     display: block;
     background-color: var(--lightgrey);
 }
 
+.columnLeft ul li:hover,
 .columnRight ul li:hover{
     background-color: var(--lightgrey);
 }
 
+#hidden li:hover,
 #hidden2 li:hover{
     background-color: white;
 }
-
-.nav_left,
-.nav_center,
-.nav_right{
-    float: left;
-    width: 33.333%;
-}
-
 
 .columnLeft img{
     vertical-align: middle;
@@ -173,7 +149,6 @@ li a{
 .columnRight a{
     font-weight: 500;
     color: black;
-    /* margin-left: 4rem; */
 }
 
 .columnRight .button{
@@ -199,20 +174,14 @@ li a{
 
 .local_contain_center{
     width: 78%;
-    /* border: 1px solid black; */
     margin: 0 auto; 
-    max-width: 1440px;
+    max-width: 1150px;
+    max-width: 1150px;
  
 }
 
 h1{
     margin-bottom: 50px;
-}
-
-.left_p{
-    width: 33%;
-    float: left;
-    /* margin: 1px solid black; */
 }
 
 .left_p p{
@@ -232,14 +201,10 @@ h1{
    top: 0;
 }
 
-.left_p a{
-    margin-top: 100px;
-}
-
 .margin_top{
     margin-top: 30px;
     margin-bottom: 20px;
-}
+} 
 
 .arrow{
     font-size: 50px;
@@ -367,7 +332,6 @@ input{
     width: 64%;
     margin-left: 30px;
     margin-top: 30px;
-    
 }
 
 .contact_right{
@@ -376,7 +340,6 @@ input{
     margin-top: 30px;
     text-align: right;
     margin-right: 30px;
-    
 }
 
 .contact_right .button{
@@ -402,7 +365,6 @@ input{
 .search_partner{
     width: 45%;
     float: left;
-    /* border: 1px solid black; */
 }
 
 .search_partner .button{
@@ -420,7 +382,6 @@ input{
     margin-left: 5%;
 }
 
-
 .image_left img{
     width: 100%;
 }
@@ -428,24 +389,7 @@ input{
 
 /* Section dropbox business */
 
-.one_badge,
-.two_badge,
-.three_badge,
-.four_badge,
-.five_badge,
-.six_badge{
-    width: 33.333%;
-    background-color: white;
-    float: left;
-    /* border: 1px solid black; */
-}
-
-.one_badge img,
-.two_badge img,
-.three_badge img,
-.four_badge img,
-.five_badge img,
-.six_badge img{
+#badge_operations img{
    width: 100%;
 }
 
@@ -488,12 +432,14 @@ input{
     border: 10px solid #D0E9CD;
 }
 
-.svg1{
+.svg1,
+.svg2,
+.svg3,
+.svg4{
     width: 100%;
     height: 100%;
     padding: 30px;
-    filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
-    
+    filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);  
 }
 
 .fourSquare2{
@@ -501,10 +447,7 @@ input{
 }
 
 .svg2{
-    width: 100%; 
-    height: 100%;
     padding: 40px;
-    filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
 }
 
 .fourSquare3{
@@ -512,11 +455,8 @@ input{
 }
 
 .svg3{
-    padding: 40px;
-    width: 100%;
+    padding: 40px; 
     object-fit: contain;
-    height: 100%; 
-    filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
 }
 
 .fourSquare4{
@@ -524,17 +464,17 @@ input{
 }
 
 .svg4{
-    padding: 40px;
-    height: 100%;
-    width: 100%; 
-    filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
+    padding: 40px;   
 }
 
 .fourSquare1-1{
     background-color: #D5001F;
 }
 
-.svg1-1{
+.svg1-1,
+.svg2-2,
+.svg3-3,
+.svg4-4{
     padding: 40px;
     height: 100%;
     width: 100%; 
@@ -547,9 +487,6 @@ input{
 
 .svg2-2{
     padding: 30px;
-    height: 100%;
-    width: 100%; 
-    filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
 }
 
 .fourSquare3-3{
@@ -558,9 +495,6 @@ input{
 
 .svg3-3{
     padding: 30px;
-    height: 100%;
-    width: 100%; 
-    filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
 }
 
 .fourSquare4-4{
@@ -569,15 +503,11 @@ input{
 
 .svg4-4{
     padding: 30px;
-    height: 100%;
-    width: 100%; 
-    filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
 }
 
 .centerSquare{
     background-color: #F5F5F5;
     position: relative;
-
 }
 
 .centerSquare p{
@@ -601,36 +531,19 @@ input{
 .squareLeft,
 .centerSquare,
 .squareRight{
-    width: 25%;
     height: 285px;
-    /* border: 1px solid black; */
-    float: left;
-}
-
-.centerSquare{
-    width: 50%;
 }
 
 .fourSquare1,
 .fourSquare2,
 .fourSquare3,
-.fourSquare4{
-    width: 50%;
-    /* border: 1px solid black;  */
-    float: left;
-    height: 143px;
-}
-
+.fourSquare4,
 .fourSquare1-1,
 .fourSquare2-2,
 .fourSquare3-3,
 .fourSquare4-4{
-    width: 50%;
     height: 143px;
-    border: 1px solid black;
-    float: left;
 }
-
 
 /* section trial */
 
@@ -641,10 +554,7 @@ input{
 
 .agency,
 .free_trial{
-    float: left;
-    width: 50%;
     height: 207px;
-    /* border: 1px solid black; */
     position: relative;
 }
 
@@ -667,9 +577,7 @@ input{
 /* section requests */
 
 #request{
-    /* background-color: lightskyblue; */
     width: 100%;
-
 }
 
 #request hr{
@@ -686,11 +594,8 @@ input{
 
 #request span{
     vertical-align: initial;
-    /* margin-left: 280px; */
     margin-left: 250px;
 }
-
-
 
 #request h4{
     display: inline-block;
@@ -707,19 +612,7 @@ footer{
 
 #container_footer{
     width: 80%;
-    /* border: 1px solid white; */
     margin: 0 auto;
-}
-
-.dropbox,
-.prodotti,
-.azienda,
-.supporto,
-.community{
-    float: left;
-    height: 100%;
-    width: 20%;
-    /* border: 1px solid white; */
 }
 
 .color_grey{
