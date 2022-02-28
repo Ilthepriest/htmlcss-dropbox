@@ -62,6 +62,7 @@ p{
     height: 65px;
     padding: 10px;
     line-height: 45px;
+    position: relative;
 }
 
 .columnRight{
@@ -73,12 +74,92 @@ p{
     line-height: 45px;
 }
 
-.columnLeft a{
+.columnLeft ul li{
     font-weight: 500;
-    color: black;
     margin-left: 4rem;
     vertical-align: middle;
+    display: inline-block;
+    list-style: none;
+   
 }
+
+.columnLeft #hidden{
+    position: absolute;
+    width: 800px;
+    display:none;
+    
+}
+
+.columnRight #hidden2{
+    position: absolute;
+    display:none;
+    width: 300px;
+    text-align: start;
+    
+}
+
+.columnRight ul li{
+    font-weight: 500;
+    margin-left: 4rem;
+    vertical-align: middle;
+    display: inline-block;
+    list-style: none;
+}
+
+
+#hidden li{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#hidden2 li{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
+li a{
+    font-weight: 500;
+    color: black;
+}
+
+.columnLeft ul li:hover #hidden{
+    display: block;
+    background-color: lightgray;
+}
+
+.columnLeft ul li:hover{
+    background-color: lightgray;
+}
+
+#hidden li:hover{
+    background-color: white;
+}
+
+
+.columnRight ul li:hover #hidden2{
+    display: block;
+    background-color: lightgray;
+}
+
+.columnRight ul li:hover{
+    background-color: lightgray;
+}
+
+#hidden2 li:hover{
+    background-color: white;
+}
+
+
+.nav_left,
+.nav_center,
+.nav_right{
+    float: left;
+    width: 33.333%;
+}
+
 
 .columnLeft img{
     vertical-align: middle;
@@ -88,16 +169,21 @@ p{
 .columnRight a{
     font-weight: 500;
     color: black;
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
 }
 
 .columnRight .button{
     color: white;
+    margin-left: 4rem;
 }
 
 .btn_margin_right{
     margin-right: 1rem;
 }
+
+
+
+
 
 /* Main */
 
@@ -153,7 +239,7 @@ h1{
 }
 
 .arrow{
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 40px;
 }
 
@@ -161,6 +247,7 @@ h1{
     color: black;
 }
 /* Section business */
+
 
 .business{
     width: 100%;
@@ -200,6 +287,16 @@ input{
     font-weight: 500;
 }
 
+.color_icon{
+    color: var(--blue);
+    font-size: 20px;
+}
+
+.color_gray{
+    color: gray;
+}
+
+
 .one{
     margin-top: 20px;
 }
@@ -222,8 +319,9 @@ input{
 }
 
 .three .text_underline{
-    color: #0061FF;
+    color: var(--blue);
     text-decoration: underline;
+    font-weight: 700;
 }
 
 .hr{
@@ -243,7 +341,7 @@ input{
 .professional,
 .standard,
 .advanced{
-    height: 1200px;
+    height: 1000px;
     width: 29.333%;
     float: left;
     border: 1px solid lightgray;
@@ -375,9 +473,14 @@ input{
     margin-bottom: 30px;
 }
 
+#team h2{
+    margin-bottom: 20px;
+}
+
 #team a{
     color: var(--blue);
     text-decoration: underline;
+    font-weight: 700;
 }
 
 
@@ -388,8 +491,10 @@ input{
 
 .svg1{
     width: 100%;
+    height: 100%;
     padding: 30px;
     filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
+    
 }
 
 
@@ -399,7 +504,8 @@ input{
 
 .svg2{
     width: 100%; 
-    padding: 50px;
+    height: 100%;
+    padding: 40px;
     filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
 }
 
@@ -408,8 +514,10 @@ input{
 }
 
 .svg3{
-    padding: 50px;
-    width: 100%; 
+    padding: 40px;
+    width: 100%;
+    object-fit: contain;
+    height: 100%; 
     filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
 }
 
@@ -418,7 +526,8 @@ input{
 }
 
 .svg4{
-    padding: 50px;
+    padding: 40px;
+    height: 100%;
     width: 100%; 
     filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
 }
@@ -428,7 +537,8 @@ input{
 }
 
 .svg1-1{
-    padding: 50px;
+    padding: 40px;
+    height: 100%;
     width: 100%; 
     filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
 }
@@ -438,7 +548,8 @@ input{
 }
 
 .svg2-2{
-    padding: 50px;
+    padding: 30px;
+    height: 100%;
     width: 100%; 
     filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
 }
@@ -448,7 +559,8 @@ input{
 }
 
 .svg3-3{
-    padding: 50px;
+    padding: 30px;
+    height: 100%;
     width: 100%; 
     filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
 }
@@ -458,7 +570,8 @@ input{
 }
 
 .svg4-4{
-    padding: 50px;
+    padding: 30px;
+    height: 100%;
     width: 100%; 
     filter: invert(100%) sepia(5%) saturate(405%) hue-rotate(163deg) brightness(117%) contrast(100%);
 }
@@ -575,10 +688,12 @@ input{
 
 
 #request span{
-    font-size: 45px;
-    vertical-align: bottom;
-    margin-left: 280px;
+    vertical-align: initial;
+    /* margin-left: 280px; */
+    margin-left: 250px;
 }
+
+
 
 #request h4{
     display: inline-block;
@@ -610,9 +725,14 @@ footer{
     /* border: 1px solid white; */
 }
 
+.color_grey{
+    color: grey;
+}
+
 footer h4{
     color: white;
     margin-top: 100px;
+    font-size: 25px;
 }
 
 footer a{
@@ -627,3 +747,4 @@ footer hr{
     margin-bottom: 40px;
     width: 50%;
 }
+
